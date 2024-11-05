@@ -1,0 +1,20 @@
+<?php
+    include 'ej17_config.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        //
+        echo "Host: $host<br>";
+        echo "Usuario: $usuario<br>";
+        echo "Contraseña: $contraseña<br>";
+        echo "Base de datos: $base_de_datos<br>";
+    ?>
+</body>
+</html>

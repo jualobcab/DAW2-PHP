@@ -1,0 +1,1 @@
+ALGOMAS,2,2;algo,1,4;manzana,2.3,4;prueba,14.5,4;prueba2,2.5,5;Me van a suspender,12,11;

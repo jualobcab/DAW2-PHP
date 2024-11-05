@@ -1,0 +1,24 @@
+/* Constantes */
+:root{
+    --color-Mensajes:#4378E5;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+}
+
+/* Errores */
+p.mensaje-error {
+    font-size: small;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: var(--color-Mensajes);
+}
+p.mensaje-Exito {
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color-Mensajes);
+}

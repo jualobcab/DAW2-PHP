@@ -1,0 +1,56 @@
+:root{
+    --color-Header: #DCE2FD;
+    --color-Inputs: rgb(239, 244, 247);
+    --color-Inputs-Error:#DCE2FD;
+    --color-Inputs-Error-Border:#4378E5;
+    --color-Titulo: #6880AB;
+}
+
+/* Header */
+header{
+    background-color: var(--color-Header) !important;
+}
+header>h2{
+    color: var(--color-Titulo);
+}
+
+/* Inputs */
+label {
+    font-weight: bold;
+}
+input {
+    background-color: var(--color-Inputs);
+}
+
+/* Tabla */
+table {
+    width: 100%;
+}
+table th {
+    background-color: black;
+    color: white;
+}
+.mayor {
+    background-color: var(--color-Inputs-Error-Border);
+    font-weight: bold;
+}
+
+/* Errores */
+input.error {
+    background-color: var(--color-Inputs-Error);
+    border: solid 2px var(--color-Inputs-Error-Border);
+}
+
+p.mensaje-error {
+    font-size: small;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: var(--color-Inputs-Error-Border);
+}
+p.mensaje-Exito {
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color-Inputs-Error-Border);
+}

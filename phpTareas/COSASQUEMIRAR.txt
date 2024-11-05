@@ -1,0 +1,14 @@
+Mirar: 
+// EJ 26
+fopen()
+fclose()
+fgets()
+feof()
+fwrite()
+fread()
+explode()
+move_uploaded_file()
+basename() // De una ruta completa se que solo con el nombre del archivo
+-------------------
+en el form si vas a meter imagenes debes de poner "enctype"
+-------------------

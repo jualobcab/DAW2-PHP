@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/* Constantes */
+:root{
+    --color-Header: #DCE2FD;
+    --color-Inputs: rgb(239, 244, 247);
+    --color-Inputs-Error:#DCE2FD;
+    --color-Inputs-Error-Border:#4378E5;
+    --color-Reset: rgb(77, 77, 104);
+    --color-Titulo: #6880AB;
+}
+
+/* Formato del HTML */
+header{
+    background-color: var(--color-Header) !important;
+}
+header>h2{
+    color: var(--color-Titulo);
+    font-family: "Oswald", sans-serif;
+}
+label,legend {
+    font-weight: bold;
+}
+input,textarea,select {
+    background-color: var(--color-Inputs);
+}
+fieldset>label{
+    font-weight: normal;
+}
+
+/* Botones del formulario */
+form input[type="submit"].enviar{
+    width: 59.5%;
+    margin-right: 3px;
+}
+form input[type="submit"].limpiar{
+    background-color: var(--color-Reset);
+    border: solid 1px var(--color-Reset);
+    width: 40%;
+}
+
+/* Contraseñas */
+div.contrasenyas {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.contrasenyas>div{
+    width: 49.5%;
+}
+input,select{
+    width: 100%;
+}
+
+/* Errores */
+input.error {
+    background-color: var(--color-Inputs-Error);
+    border: solid 2px var(--color-Inputs-Error-Border);
+}
+
+p.mensaje-error {
+    font-size: small;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: var(--color-Inputs-Error-Border);
+}
+p.mensaje-Exito {
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color-Inputs-Error-Border);
+}
