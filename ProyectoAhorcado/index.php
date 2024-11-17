@@ -15,7 +15,7 @@
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $_POST['letra'] = strtolower($_POST['letra']);
-        if ($_SESSION['fallos']>=6){
+        if ($_SESSION['fallos']>=6 || palabraCompleta()){
             array_push($mensajes, $mensajeFinalizado);
         }
         else if (isset($_POST['letra']) && !empty($_POST['letra']) && ctype_alpha($_POST['letra'])){
@@ -84,7 +84,7 @@
                         <td><?php echo implode(" ",$_SESSION["letras"]) ?></td>
                     </tr>
                 </table>
-                <form action method="post" style= <?php if($_SESSION["fallos"]==6) echo 'display:none;' ?>> <!-- Debe desaparecer si se ha perdido -->
+                <form action method="post" style= <?php if($_SESSION["fallos"]==6 || palabraCompleta()) echo 'display:none;' ?>> <!-- Debe desaparecer si se ha perdido -->
                     <label for="letra">Introduce una letra:</label>
                     <input type="text" name="letra" id="letra" maxlength="1" required>
                     <button type="submit" name="enviar">Enviar</button>
