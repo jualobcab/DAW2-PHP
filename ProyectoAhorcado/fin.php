@@ -1,4 +1,7 @@
-// Reiniciar la partida
-
-
-// Mirar extract(array) --> transforma un array asociativo en variables de nombres de las keys y con valor igual al valor  
+<?php
+    session_start();
+    session_unset();
+    session_destroy();
+    
+    header('Location: mierda.php');
+?>
